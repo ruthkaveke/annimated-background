@@ -1,0 +1,57 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	body{ margin: 48px; background:#000;}
+	 #banner{
+		width: 1000px;
+		height:200px;
+		margin: 0px auto;
+		border: #639 5px solid;
+		overflow: hidden;
+
+	}
+	#banner >#banner_backdrop{
+		position: relative;
+		background: url(background.png)  repeat-x;
+		width: 1320px;
+		height: 200px;
+		-moz-animation: backdrop_roll linear 6s infinite;
+		animation:backdrop_roll linear 15s infinite;
+	}
+	}
+	@-moz-keyframes backdrop_roll {
+		from{ right: 0px;} 
+		to{right: 320px;}
+
+	}
+	@keyframes backdrop_roll {
+		from{ right:0px;}
+		to{right: 320px;}
+}
+	#banner >#banner_content{
+		position: relative;
+		width:96%;
+		height: 160px;
+		margin: 20px auto;
+		top:-200px;
+		color: #FFF;
+		font-size: 27px;
+	
+	}
+	</style>
+
+</head>
+<body>
+<div id ="banner">
+<div id="banner_backdrop"></div>
+<div id="banner_content">
+I love coding I love coding I love coding I love coding 
+</div>
+</div>
+
+</body>
+</html>
